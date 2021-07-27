@@ -13,12 +13,11 @@ they can search the library's catalogue with this program search system.
 MAIN IDEA: 
 This program is a search for books in a library's book collection.
 The program will allow a user to search for a book in the collection by the following categories:
-    {TITLE, AUTHOR, GENRE, PUBLISHER, YEAR, Catalogue number}
+    {TITLE, AUTHOR, GENRE, PUBLISHER, YEAR}
 
 
 DIVIDE and CONQUER Solution:
 - A collection of books will be imported 
 - A message will greet the user
 - Ask a user by which category do they wish to search book by
-- Initiate a Graph Search Algorithm
 - Display all books by selected category
