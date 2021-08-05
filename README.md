@@ -13,7 +13,7 @@ they can search the library's catalogue with this program search system.
 MAIN IDEA: 
 This program is a search for books in a library's book collection.
 The program will allow a user to search for a book in the collection by the following categories:
-    {TITLE, AUTHOR, GENRE, PUBLISHER, YEAR}
+    {TITLE, AUTHOR, GENRE, YEAR}
 
 
 DIVIDE and CONQUER Solution:
