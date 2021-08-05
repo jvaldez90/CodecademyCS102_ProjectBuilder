@@ -1,4 +1,6 @@
-from books import books
+from library_books import books
+from sort_books import *
+
 def greet():
   print("""
   **************************
@@ -31,15 +33,19 @@ def book_search():
 
   if search == category[0]:
     # display books.py  by TITLE
+    print("Here are library books in our collection by "+ search)
     search_titles(books)
   elif search == category[1]:
     # display books.py by AUTHOR
+    print("Here are library books in our collection by "+ search)
     search_authors(books)
   elif search == category[2]:
     # display booky.py by GENRE
+    print("Here are library books in our collection by "+ search)
     search_genres(books)
   elif search == category[3]:    
     # display booky.py by year
+    print("Here are library books in our collection by "+ search)
     search_year(books)
 
   keep_going = input("\nDo you still want to continue? (y/n) ")
@@ -53,24 +59,16 @@ def book_search():
 # END OF book_search():
 
 def search_titles(books):
-  print()
-  for book in books:
-    print("=> \'"+ books[book]["title"] + "\' by " + books[book]["author"] + "\n\tCall Number: " + books[book]["call_number"])
+  sort_by_titles()
 
 def search_authors(books):
-  print()
-  for book in books:
-    print("=> "+ books[book]["author"] + " \n\t\'" + books[book]["title"]+ "\'" + "\n\tCall Number: " + books[book]["call_number"])
+  sort_by_authors()
 
 def search_genres(books):
-  print()
-  for book in books:
-    print("=> " + books[book]["genre"] + ": \n\t\'" + books[book]["title"] + "\' by " + books[book]["author"] + "\n\tCall Number: " + books[book]["call_number"])
-
-def search_year(books):
-  print()
-  for book in books:
-    print("=> " + str(books[book]["year"]) + ": \n\t\'" + books[book]["title"] + "\' by " + books[book]["author"] + "\n\tCall Number: " + books[book]["call_number"])
+  sort_by_genre()
+  
+def search_year(books):  
+  sort_by_year()
 
 # MAIN PROGRAM
 greet()
